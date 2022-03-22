@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { getPosts } from '../utils/mdx-utils';
-
+import CustomLink from '../components/CustomLink';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
-import ArrowIcon from '../components/ArrowIcon';
-import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import ArrowIcon from '../components/ArrowIcon';
+
+import { getGlobalData } from '../utils/global-data';
+import { getPosts } from '../utils/mdx-utils';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -14,9 +15,14 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        <CustomLink href="about">
+          <h2 className="text-3xl lg:text-5xl text-center mb-12">
+            About me
+          </h2>
+        </CustomLink>
+        <h2 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
-        </h1>
+        </h2>
         <ul className="w-full">
           {posts.map((post) => (
             <li
