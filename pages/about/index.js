@@ -33,13 +33,13 @@ const AboutPage = (props) => {
             </h4>
             <p className="text-sm flex items-center w-fit">
               <GithubIcon className="mr-2" />
-              <a href="https://github.com/nguyentrongquocuet" target="_blank">
+              <a href="https://github.com/nguyentrongquocuet" target="_blank" rel="noreferrer">
                 nguyentrongquocuet
               </a>
             </p>
             <p className="text-sm flex items-center w-fit">
               <DevToIcon className="mr-2" />
-              <a href="https://dev.to/nguyentrongquocuet" target="_blank">
+              <a href="https://dev.to/nguyentrongquocuet" target="_blank" rel="noreferrer">
                 nguyentrongquocuet
               </a>
             </p>
@@ -50,7 +50,7 @@ const AboutPage = (props) => {
             I build things for the web
           </h2>
           <p className="text-lg text-left mt-2">
-            I'm a software engineer based in Hanoi, specalizing in building websites front-to-back, mainly focus on user-interface
+            I&apos;m a software engineer based in Hanoi, specalizing in building websites front-to-back, mainly focus on user-interface
           </p>
           <p className="text-lg text-left mt-1">
             Love coding, music, movies, games :D

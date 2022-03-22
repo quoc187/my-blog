@@ -15,7 +15,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <CustomLink href="about">
+        <CustomLink href="/about">
           <h2 className="text-3xl lg:text-5xl text-center mb-12">
             About me
           </h2>
