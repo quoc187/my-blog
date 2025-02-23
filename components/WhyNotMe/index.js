@@ -4,10 +4,13 @@ import { Loader } from './Loader';
 import { MusicToggle } from './MusicToggle';
 import { WContext } from './context'
 import { useState } from 'react'
+import { useClientInfo } from '../collect-info'
 
 export default function WhyNotMe() {
   const [answer, setAnswer] = useState("");
   const [messageSent, setMessageSent] = useState(false);
+  
+  useClientInfo()
 
   return (
     <>

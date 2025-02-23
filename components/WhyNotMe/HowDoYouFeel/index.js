@@ -3,13 +3,14 @@ import { useWContext } from '../context';
 import { useRef } from 'react';
 
 const sheFeels = (feeling) => {
-  return fetch('https://67bb2527fbe0387ca13936df.mockapi.io/feels', {
+  return fetch('https://67bb2527fbe0387ca13936df.mockapi.io/notes', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     // Send your data in the request body as JSON
     body: JSON.stringify({
       date: Date.now(),
       answer: feeling,
+      type: 'feel'
     }),
   }).then((res) => {
     if (res.ok) {
@@ -27,6 +28,7 @@ const sheNotes = (note) => {
     body: JSON.stringify({
       date: Date.now(),
       content: note,
+      type: 'note'
     }),
   });
 };
@@ -34,8 +36,6 @@ const sheNotes = (note) => {
 export const HowDoYouFeel = () => {
   const { setAnswer, answer, setMessageSent, messageSent } = useWContext();
   const inputRef = useRef(null);
-
-  console.log('AA', answer);
 
   const question = 'Ngày hôm nay em thế nào?';
 
