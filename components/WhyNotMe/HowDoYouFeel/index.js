@@ -1,6 +1,7 @@
 import { confetti } from '@tsparticles/confetti';
 import { useWContext } from '../context';
 import { useRef } from 'react';
+import { NOTOKEy, OKEY } from '../images'
 
 const sheFeels = (feeling) => {
   return fetch('https://67bb2527fbe0387ca13936df.mockapi.io/notes', {
@@ -86,13 +87,13 @@ export const HowDoYouFeel = () => {
       <div className="flex gap-3 max-w-xs">
         <ImgButton
           isActive={answer === 'OK'}
-          src="/OK.jpg"
+          src={OKEY}
           onClick={() => onAnswer?.('OK')}
         />
         <ImgButton
           isActive={answer === 'NotOK'}
           isBad
-          src="/NotOK.jpg"
+          src={NOTOKEy}
           onClick={() => onAnswer?.('NotOK')}
         />
       </div>
