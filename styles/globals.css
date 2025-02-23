@@ -15,3 +15,26 @@ h6 {
 body {
   font-family: var(--font-secondary);
 }
+
+.floating-text {
+  animation: float 60s linear infinite;
+}
+
+.floating-text:nth-child(2n) {
+  --float-distance: -1000px;
+}
+
+.floating-text:nth-child(2n+1) {
+  margin-left: -1000px;
+  --float-distance: 1000px;
+}
+
+@keyframes float {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(var(--float-distance)); }
+  100% { transform: translateX(0); }
+}
+
+#confetti {
+  pointer-events: none;
+}
