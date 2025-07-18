@@ -8,7 +8,7 @@ export const MusicToggle = () => {
 
   const toggleMusic = () => {
     if (!audioRef.current) {
-      const audio = new Audio('/music.mp3');
+      const audio = new Audio('/music-1.mp3');
       audio.loop = true;
       audio.addEventListener("canplay", () => setIsLoading(false));
       setIsLoading(true);

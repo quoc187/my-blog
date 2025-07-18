@@ -37,22 +37,23 @@ export const Loader = () => {
   const cls = answer !== "NotOK" ? "bg-[#ff8da1]" : "bg-black";
 
   const getText = () => {
-    if (messageSent || answer === "OK") {
-      return happy;
-    }
+    // if (messageSent || answer === "OK") {
+    //   return happy;
+    // }
 
-    if (!answer) {
-      return hello;
-    }
+    // if (!answer) {
+    //   return hello;
+    // }
 
-    return aggg;
+    // return aggg;
+    return "CONGRATS!!!"
   }
 
   return (
     <div className={cls + " h-screen w-screen absolute inset-0 overflow-hidden"}>
       {[0, 1, 2, 3, 4].map((index) => (
         <FloatingText key={index} size={size}>
-          {getText()}
+          {getText()} {getText()} {getText()}
         </FloatingText>
       ))}
     </div>

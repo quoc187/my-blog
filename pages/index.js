@@ -6,6 +6,7 @@ import Layout, { GradientBackground } from '../components/Layout';
 import SEO from '../components/SEO';
 import ArrowIcon from '../components/ArrowIcon';
 
+
 import { getGlobalData } from '../utils/global-data';
 import { getPosts } from '../utils/mdx-utils';
 
