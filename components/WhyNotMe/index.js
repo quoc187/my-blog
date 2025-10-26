@@ -34,7 +34,7 @@ const YouMadeId = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-white text-5xl font-bold mb-3 text-center">
-        It's bad when you risk something you can't afford to lose.
+        It&#39;s bad when you risk something you can&#39;t afford to lose.
       </h1>
       <h1 className="text-white text-5xl font-bold mb-3 text-center">
         Perhaps, I can afford everything.
