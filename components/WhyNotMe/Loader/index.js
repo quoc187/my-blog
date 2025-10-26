@@ -46,7 +46,7 @@ export const Loader = () => {
     // }
 
     // return aggg;
-    return "CONGRATS!!!"
+    return "~~ ~~ ~~ ~~ ~~"
   }
 
   return (
